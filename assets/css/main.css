@@ -334,7 +334,8 @@ html {
   font-size: 10px;
 }
 
-html,body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -4307,7 +4308,8 @@ body .ui-tooltip {
   z-index: 99 !important;
 }
 
-.ui-datepicker td a, .ui-datepicker td span {
+.ui-datepicker td a,
+.ui-datepicker td span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12737,7 +12739,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
   color: var(--rr-color-900);
 }
 
-.take-appointment__form-input div.input-wrapper input {
+.take-appointment__form-input div.input-wrapper input,
+.take-appointment__form-input div.input-wrapper textarea {
   z-index: 2;
   position: relative;
   width: 100%;
@@ -12754,6 +12757,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
   line-height: 28px;
   border-radius: 0 !important;
   color: rgba(7, 28, 60, 0.6) !important;
+}
+
+.take-appointment__form-input div.input-wrapper textarea {
+  height: auto;
 }
 
 .take-appointment__form-input div.input-wrapper input::-webkit-input-placeholder {
@@ -15938,7 +15945,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
   margin-bottom: 20px;
 }
 
-.pricing-appointment__form input {
+.pricing-appointment__form input,
+.pricing-appointment__form select {
   z-index: 2;
   position: relative;
   width: 100%;
@@ -15952,6 +15960,14 @@ only screen and (min-width: 576px) and (max-width: 767px),
   color: var(--rr-color-900) !important;
   border-radius: 30px !important;
   background-color: var(--rr-color-100) !important;
+}
+
+.pricing-appointment__form select {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z" data-name="16" fill="%23000000" opacity="1" data-original="%23000000" class=""></path></g></svg>');
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 20px;
+  appearance: none;
 }
 
 .pricing-appointment__form input::-webkit-input-placeholder {
@@ -20219,7 +20235,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   color: var(--rr-theme-glow);
 }
 
-.list-style-disc li{
+.list-style-disc li {
   display: list-item !important;
   list-style-type: disc !important;
 }
