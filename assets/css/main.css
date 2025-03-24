@@ -20166,13 +20166,29 @@ only screen and (min-width: 576px) and (max-width: 767px),
   color: #FFF;
 }
 
-.founder-img  img{
-  width: auto;
-  height: 490px;
+.founder-img img {
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   text-align: center;
   max-width: 100%;
   border-radius: 100%;
+}
+
+.founder-bg-shape {
+  position: absolute;
+  width: auto;
+  height: 300px;
+  right: 0;
+  bottom: 0;
+}
+
+.founder-bg-circle {
+  position: absolute;
+  width: 120px;
+  height: auto;
+  left: -50px;
+  bottom: -50px;
 }
 
 .float-wp-icon {
@@ -20185,6 +20201,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   gap: 6px;
   z-index: 100;
 }
+
 
 .float-wp-icon svg {
   width: 60px;
@@ -20207,7 +20224,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 @media (max-width: 575px),
 only screen and (min-width: 576px) and (max-width: 767px),
 only screen and (min-width: 992px) and (max-width: 1199px) {
-  .float-wp-icon svg{
+  .float-wp-icon svg {
     height: 50px;
     width: 50px;
   }
@@ -20221,5 +20238,14 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 @media (max-width: 576px) {
   .founder-img img {
     height: 100%;
+  }
+
+  .founder-bg-shape {
+    width: auto;
+    height: 100px;
+  }
+
+  .founder-bg-circle {
+    width: 100px;
   }
 }
